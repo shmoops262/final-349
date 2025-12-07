@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Eli Klunder | Product Designer & Engineer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="page">
+    <header class="site-header">
+      <div class="logo-group">
+        <img src="images/eli%20logo.png" alt="Eli Klunder logo" class="logo" />
+        <div>
+          <p class="eyebrow">Product Designer & Engineer</p>
+          <h1 class="site-title">Eli Klunder</h1>
+        </div>
+      </div>
+      <nav class="nav">
+        <a href="#about">About</a>
+        <a href="#work">Selected Work</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero-text">
+          <p class="eyebrow">Hello, I'm Eli</p>
+          <h2>Designing thoughtful products that feel effortless.</h2>
+          <p class="lede">
+            I combine rapid prototyping, user research, and a builder's mindset to craft
+            experiences that solve real problems and delight people along the way.
+          </p>
+          <div class="actions">
+            <a class="button" href="#work">View Projects</a>
+            <a class="link" href="#contact">Let's talk →</a>
+          </div>
+        </div>
+        <div class="hero-photo">
+          <div class="photo-frame">
+            <img src="images/eli-klunder-portrait.JPG" alt="Portrait of Eli Klunder" />
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="card about">
+        <h3>About</h3>
+        <p>
+          I'm a multidisciplinary designer who loves diving into complex problems and bringing
+          clarity through elegant interfaces. With a background spanning product strategy,
+          engineering, and visual design, I move ideas from sketch to shipped experience.
+        </p>
+        <ul class="pill-list">
+          <li>Design systems</li>
+          <li>Prototyping</li>
+          <li>Usability testing</li>
+          <li>Frontend development</li>
+        </ul>
+      </section>
+
+      <section id="work" class="card work">
+        <div class="section-header">
+          <h3>Selected Work</h3>
+          <p class="eyebrow">Case studies available on request</p>
+        </div>
+        <div class="work-grid">
+          <article class="work-item">
+            <h4>Design system refresh</h4>
+            <p>Rebuilt a scalable component library, cutting build times and improving accessibility.</p>
+            <span class="tag">Design Ops</span>
+          </article>
+          <article class="work-item">
+            <h4>Mobile onboarding</h4>
+            <p>Launched a guided onboarding that increased activation by 18% month over month.</p>
+            <span class="tag">Product Design</span>
+          </article>
+          <article class="work-item">
+            <h4>Prototype to production</h4>
+            <p>Delivered a high-fidelity prototype that shipped with minimal rework.</p>
+            <span class="tag">Prototyping</span>
+          </article>
+        </div>
+      </section>
+
+      <section id="contact" class="card contact">
+        <div>
+          <h3>Let's build something together</h3>
+          <p>Want to collaborate or chat about a project? I'm always excited to hear from new teams.</p>
+        </div>
+        <a class="button" href="mailto:hello@example.com">Email Eli</a>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>© <span id="year"></span> Eli Klunder. Crafted with care.</p>
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
